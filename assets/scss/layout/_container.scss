@@ -1,16 +1,17 @@
 .container {
-    width: 17.5rem;
-    margin: 0 auto;
+  padding: 0 1.5rem;
+  margin: 0 auto;
 }
 
-@media only screen and (min-width: $mobile-up) {
-    .container {
-        width: 42rem;
-    }
+@include for-tablet-portrait-up {
+  .container {
+    width: 36rem;
+  }
 }
 
-@media only screen and (min-width: $desktop-up) {
-    .container {
-        width: 65.625rem;
-    }
+@include for-desktop-up {
+  .container {
+    width: 71.875rem;
+    padding: 0;
+  }
 }
